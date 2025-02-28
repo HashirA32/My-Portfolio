@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function HeroSection() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -23,16 +23,16 @@ export default function HeroSection() {
    ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="logo">
-         
-        </a>
+        <Link to="/" className="logo">
+         HA-Porfolio
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6 text-gray-300">
-          <a href="/" className="action-btn">Projects</a>
-          <a href="/" className="action-btn">About Me</a>
+          <Link to="/"  className="action-btn">Projects</Link>
+          <Link to="/"  className="action-btn">About Me</Link>
         
-          <a href="/" className="action-btn text-white px-4 py-2 rounded-lg">@hashirofficiala32</a>
+          <Link to="/"  className="action-btn text-white px-4 py-2 rounded-lg">@hashirofficiala32</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -45,12 +45,12 @@ export default function HeroSection() {
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-[/121212] p-4 
         shadow-md md:hidden flex flex-col space-y-4 text-gray-300">
-          <a href="/" className="hover:text-white">Design</a>
-          <a href="/" className="hover:text-white">Photos</a>
-          <a href="/" className="hover:text-white">About</a>
+          <Link to="/"  className="hover:text-white">Design</Link>
+          <Link to="/"  className="hover:text-white">Photos</Link>
+          <Link to="/"  className="hover:text-white">About</Link>
           <div className="flex items-center space-x-4 mt-4">
-            <a href="/" className="text-gray-400 hover:text-white">FR</a>
-            <a href="/" className="text-white font-semibold">EN</a>
+            <Link to="/"  className="text-gray-400 hover:text-white">FR</Link>
+            <Link to="/"  className="text-white font-semibold">EN</Link>
           </div>
           <button className="bg-[/D4AF37] text-white px-4 py-2 rounded-lg">hello@bazil.fr</button>
         </div>
@@ -58,19 +58,19 @@ export default function HeroSection() {
     </nav>
 
 
-    <div className="relative h-100 bg-[#121212] text-white flex items-center justify-center overflow-hidden">
+    <div className="hero-text relative bg-[#121212] text-white">
       
       {/* Background Image */}
-      <div className="hero-bg-img absolute inset-0 z-0"></div>
+      <div className="hero-bg-img absolute inset-0 z-10"></div>
 
       {/* Foreground Image (Person) */}
       <div className="hero-my-img absolute inset-0 z-20"></div>
 
       {/* Hero Content */}
-      <div className="relative text-center max-w-3xl mb-0 mt-25 ">
-        <p className="text-lg text-gray-100 bg-[#d4af3727] font-bold text-center relative z-30 mb-5">
+      <div className="relative text-center flex items-center content-center flex-col max-w-3xl mb-0 mt-25 ">
+        <p className="text-lg text-gray-100 rounded-sm bg-[#d4af3727] w-fit font-bold text-center p-1 relative z-30 mb-5">
           My name is Hashir and I am a freelance</p>
-        <a href="/">
+        <Link to="/" >
         <h1 className="text-8xl font-bold leading-tight relative">
           {/* Stroked Text (Above Foreground Image) */}
           <span 
@@ -83,7 +83,7 @@ export default function HeroSection() {
           {/* Filled Text (Behind Foreground Image) */}
           <span className="text-white-800  relative z-10">Webdeveloper</span> <br />
         </h1>
-        </a>
+        </Link>
         <p className="text-white text-lg mt-10 font-bold relative z-30"><i class="fa-solid fa-location-dot">
           </i> DIKhan KPK Pakistan.</p>
 
