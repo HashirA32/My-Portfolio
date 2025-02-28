@@ -1,38 +1,126 @@
-.App {
+@import "tailwindcss";
+
+body {
+  background-color: #121212;
+}
+
+/* Nav and Hero Section */
+.navBar {
+  font-family: "Montserrat", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.action-btn:hover {
+  color: #d4af37;
+}
+
+.logo {
+  background-image: url(../public/images/logo.jpeg);
+  background-size: 120%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+}
+
+.hero-bg-img {
+  background: url(../public/images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70dvh;
+}
+
+.hero-my-img {
+  background-image: url(../public/images/Porfolio-image2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32%;
+  height: 70dvh;
+}
+
+.hero-btn:hover {
+  background-color: #e0b31c;
+}
+
+/* Work Section */
+
+.portfolio-section {
+  padding: 50px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.portfolio-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 15px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.portfolio-item {
+  flex: 0 0 auto;
+  width: 240px;
+  height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-card {
+  position: relative;
+  width: 230px;
+  height: 360px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px #d4af372c;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e0b31c;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
