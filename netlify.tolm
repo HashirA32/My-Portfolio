@@ -1,0 +1,9 @@
+[build]
+  # Command to install dependencies and run your build script
+  command = "pip install -r requirements.txt && python build.py"
+  # Directory that contains your built site (update as needed)
+  publish = "public"
+
+[build.environment]
+  # Specify a valid and supported Python version
+  PYTHON_VERSION = "3.8.10"
