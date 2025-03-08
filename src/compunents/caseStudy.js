@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import video from "../videos/02226.mp4";
-import video2 from "../videos/0228.mp4";
+import video from "../videos/UADL.mp4";
+import video2 from "../videos/UADM.mp4";
 
 
 const VideoComponent = ({ url, className, hoveredVideo, setHoveredVideo }) => {
