@@ -21,7 +21,7 @@ export default function PortfolioSection() {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 2.02 }}
               className="portfolio-item"
             >
               <div className="portfolio-card mt-{project.id}">

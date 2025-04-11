@@ -43,16 +43,16 @@ export default function HeroSection() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[/121212] p-4 
-        shadow-md md:hidden flex flex-col space-y-4 text-gray-300">
+        <div className="absolute top-0 left-0 w-42 h-80 bg-[#121212] p-9 pl-4
+        shadow-md md:hidden flex flex-col space-y-4 text-[#f4b400]">
           <Link to="/"  className="hover:text-white">Design</Link>
           <Link to="/"  className="hover:text-white">Photos</Link>
           <Link to="/"  className="hover:text-white">About</Link>
-          <div className="flex items-center space-x-4 mt-4">
-            <Link to="/"  className="text-gray-400 hover:text-white">FR</Link>
-            <Link to="/"  className="text-white font-semibold">EN</Link>
+          <div>
+            <div>
+          <button className="">hello@bazil.fr</button>
           </div>
-          <button className="bg-[/D4AF37] text-white px-4 py-2 rounded-lg">hello@bazil.fr</button>
+          </div>
         </div>
       )}
     </nav>
@@ -67,11 +67,11 @@ export default function HeroSection() {
       <div className="hero-my-img absolute inset-0 z-20"></div>
 
       {/* Hero Content */}
-      <div className="relative text-center flex items-center content-center flex-col max-w-3xl mb-0 mt-25 ">
-        <p className="text-lg text-gray-100 rounded-sm bg-[#d4af3727] w-fit font-bold text-center p-1 relative z-30 mb-5">
+      <div className="relative text-center flex items-center content-center flex-col max-w-3xl mb-0 mt-20 ">
+        <p className="text-lg text-gray-100 rounded-sm bg-[#d4af3727] w-fit font-bold text-center p-1 relative z-30 mb-05">
           My name is Hashir and I am a freelance</p>
         <Link to="/" >
-        <h1 className="text-8xl font-bold leading-tight relative">
+        <h1 className="text-9xl font-bold leading-tight relative">
           {/* Stroked Text (Above Foreground Image) */}
           <span 
             className="absolute left-0 right-0 text-transparent stroke-text z-30" 
@@ -84,11 +84,10 @@ export default function HeroSection() {
           <span className="text-white-800  relative z-10">Webdeveloper</span> <br />
         </h1>
         </Link>
-        <p className="text-white text-lg mt-10 font-bold relative z-30"><i class="fa-solid fa-location-dot">
-          </i> DIKhan KPK Pakistan.</p>
+     
 
         {/* CTA Buttons */}
-        <div className="mt-2 flex justify-center space-x-4 relative z-30">
+        <div className="hero-CTA mt-2 flex justify-center space-x-4 relative z-30">
           <button className="hero-btn border border-black text-black mt-3 mb-5 px-6 py-2 font-bold
            rounded-lg  hover:text-white transition">You need a developer</button>
         </div>

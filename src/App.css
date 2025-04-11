@@ -359,39 +359,6 @@ footer {
   padding-bottom: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-text {
-    height: 35dvh;
-    width: 100dvw;
-  }
-  .bg-text {
-    font-size: 32 px;
-  }
-  .hero-bg-img {
-    height: 40dvh;
-  }
-  .hero-my-img {
-    background-size: cover;
-    height: 40dvh;
-  }
-  .portfolio-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .video-section {
-    width: 100%;
-    height: auto;
-  }
-
-  .text-section {
-    text-align: center;
-    transform: none;
-    margin-top: 20px;
-  }
-}
-
 /* Contact section */
 
 .Contact-container {
@@ -476,4 +443,186 @@ form textarea {
 
 strong {
   color: #e0b31c;
+}
+/* Mobile Version CSS */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .action-btn {
+    font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .hero-bg-img {
+    height: 50vh;
+  }
+
+  .hero-my-img {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .hero-text {
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10dvh;
+  }
+
+  .hero-text h1 {
+    padding-top: 10dvh;
+    font-size: 3.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-top: 25dvh;
+    margin-bottom: -30dvh;
+    background-color: #dfa300;
+  }
+
+  .hero-CTA {
+    padding-top: 2 dvh;
+  }
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 20px 10px;
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-card {
+    width: 100%;
+  }
+
+  .portfolio-title {
+    font-size: 1rem;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 20px 10px;
+  }
+
+  .logo-f {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    font-size: 20px;
+  }
+
+  .footer-nav a {
+    font-size: 12px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  /* Case Study Section */
+  .portfolio-container {
+    padding: 10px;
+  }
+
+  .video-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 10px;
+  }
+
+  .text-section {
+    transform: none;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .view-project-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  /* Contact Section */
+  .Contact-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .Form-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .Contact-data {
+    border-left: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .fields {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  .btn-contact {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
 }
