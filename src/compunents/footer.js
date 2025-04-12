@@ -1,6 +1,6 @@
 // Footer.js
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaRss } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,9 +11,7 @@ const Footer = () => {
         <div className="social-icons">
           <FaFacebook />
           <FaTwitter />
-          <FaLinkedin />
-          <FaYoutube />
-          <FaRss />
+          <FaLinkedin />  
         </div>
         <nav className="footer-nav">
           <a href="#work">MY WORK</a>

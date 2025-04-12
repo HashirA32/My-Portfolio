@@ -446,12 +446,6 @@ strong {
 }
 /* Mobile Version CSS */
 @media (max-width: 768px) {
-  body {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-
   /* Navbar */
   .navBar {
     flex-direction: row;
@@ -499,52 +493,24 @@ strong {
   .hero-CTA {
     padding-top: 2 dvh;
   }
-  /* Portfolio Section */
-  .portfolio-section {
-    padding: 20px 10px;
+  /* Product section */
+  .product-card {
+    width: 200px !important;
+    flex: 0 0 200px !important;
   }
 
-  .portfolio-grid {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .portfolio-item {
-    width: 100%;
-  }
-
-  .portfolio-card {
-    width: 100%;
-  }
-
-  .portfolio-title {
-    font-size: 1rem;
-  }
-
-  /* Footer Section */
-  footer {
-    padding: 20px 10px;
-  }
-
-  .logo-f {
-    font-size: 1.2rem;
-  }
-
-  .social-icons {
-    font-size: 20px;
-  }
-
-  .footer-nav a {
-    font-size: 12px;
-  }
-
-  .footer-text {
-    font-size: 12px;
+  /* Ensure the image fills its container */
+  .product-image {
+    width: 100% !important;
+    height: 100%;
   }
 
   /* Case Study Section */
   .portfolio-container {
+    min-height: 0dvh;
+    height: 55dvh;
     padding: 10px;
+    gap: 0px;
   }
 
   .video-section {
@@ -552,13 +518,24 @@ strong {
     height: auto;
   }
 
-  .video {
-    width: 100%;
+  .video-1 {
+    width: 15rem;
     aspect-ratio: 16/9;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    top: 25dvh;
+    right: 40dvw;
+  }
+  .video-2 {
+    width: 8rem;
+    top: 13dvh;
+    left: -4rem;
   }
 
+  .video-3 {
+    width: 0;
+  }
   .text-section {
+    height: 20dvh;
     transform: none;
     margin-top: 20px;
     padding: 10px;
@@ -569,24 +546,25 @@ strong {
   }
 
   .tag {
-    font-size: 10px;
-    padding: 3px 8px;
+    font-size: 0.6rem;
+    padding: 3px 5px;
   }
 
   .description {
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 5px 8px;
   }
 
   .view-project-btn {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 0px 8px;
   }
 
   /* Contact Section */
   .Contact-container {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     height: auto;
   }
 
@@ -596,15 +574,19 @@ strong {
   }
 
   .contact-info {
-    width: 100%;
-    padding: 0;
-    text-align: center;
+    width: 100dvw;
+    padding: 0px;
+    text-align: start;
   }
 
   .Contact-data {
-    border-left: none;
-    padding: 0;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 20px;
     align-items: center;
+    margin-left: 30px;
+    display: flex;
+    align-items: baseline;
   }
 
   .fields {
@@ -625,4 +607,21 @@ strong {
     font-size: 14px;
     padding: 5px 10px;
   }
+}
+/* Footer Section */
+
+.logo-f {
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  font-size: 20px;
+}
+
+.footer-nav a {
+  font-size: 12px;
+}
+
+.footer-text {
+  font-size: 12px;
 }
