@@ -331,6 +331,7 @@ footer {
 
 /* View Project Button */
 .view-project-btn {
+  width: fit-content;
   background-color: transparent;
   border-radius: 15px;
   padding: 4px 10px;
@@ -564,6 +565,7 @@ strong {
   /* Contact Section */
   .Contact-container {
     flex-direction: column;
+    margin-top: 3rem;
     padding: 10px;
     height: auto;
   }

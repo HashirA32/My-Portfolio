@@ -86,6 +86,28 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Hero />
+              <Contact />
+              <Footer />
+            </>
+          }
+          />
+
+        <Route
+          path="/work"
+          element={
+            <>
+              <Hero />
+              <HeroParallax products={products}/>
+              <Footer />
+            </>
+          }
+          />
       </Routes>
     </Router>
   );

@@ -46,9 +46,9 @@ const PortfolioShowcase = () => {
           and improve lead generation through clear value propositions and intuitive design.
         </p>
 
-        <button className="view-project-btn">
+        <a href="https://universityofagriculturedemo1.netlify.app/" className="view-project-btn">
           View Project <span className="arrow">→</span>
-        </button>
+        </a>
       </div>
     </div>
   );
