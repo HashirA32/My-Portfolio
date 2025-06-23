@@ -501,7 +501,6 @@ strong {
     flex: 0 0 200px !important;
   }
 
-  /* Ensure the image fills its container */
   .product-image {
     width: 100% !important;
     height: 100%;
@@ -510,9 +509,10 @@ strong {
   /* Case Study Section */
   .portfolio-container {
     min-height: 0dvh;
-    height: 55dvh;
+    height: 60dvh;
     padding: 10px;
     gap: 0px;
+    margin-top: 5dvh;
   }
 
   .video-section {
@@ -525,12 +525,12 @@ strong {
     aspect-ratio: 16/9;
     margin-bottom: 0px;
     top: 30dvh;
-    right: 40dvw;
+    right: 37dvw;
   }
   .video-2 {
-    width: 8rem;
-    top: 18dvh;
-    left: -3.5rem;
+    width: 7rem;
+    top: 21dvh;
+    left: 0rem;
   }
 
   .video-3 {
