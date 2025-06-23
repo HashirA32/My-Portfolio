@@ -73,7 +73,7 @@ export default function HeroSection() {
           {/* Stroked Text (Above Foreground Image) */}
           <span 
             className="absolute left-0 right-0 text-transparent stroke-text z-30" 
-            style={{ WebkitTextStroke: "2px grey", mixBlendMode: "difference" }}>
+            style={{ WebkitTextStroke: "1px grey md:2px", mixBlendMode: "difference" }}>
             Webdeveloper
           </span>
           {/* Filled Text (Behind Foreground Image) */}
