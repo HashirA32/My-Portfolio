@@ -29,7 +29,7 @@ const ContactForm = () => {
           <p className="Contact-data">
             <strong>Location</strong>
             <br />
-            29111 Teh: Pahapur,Dist:Dera Ismail Khan, KPK, Pakistan.
+            29111 Teh:Pahapur, Dist:Dera Ismail Khan, KPK, Pakistan.
           </p>
         </div>
      
@@ -38,3 +38,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

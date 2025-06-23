@@ -9,6 +9,8 @@ import img2 from './img/Img5.png'
 import img3 from './img/Img1.png'
 import img4 from './img/Img4.png'
 import img5 from './img/Img3.png'
+import img6 from './img/Img6.png'
+import img7 from './img/Img7.png'
 import './App.css';
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
     {
       title: "Project 3",
       link: "/",
-      thumbnail: img3,
+      thumbnail: img6,
     },
     {
       title: "Project 4",
@@ -46,7 +48,7 @@ function App() {
     {
       title: "Project 7",
       link: "/",
-      thumbnail: img4,
+      thumbnail: img7,
     }
     ,
     {

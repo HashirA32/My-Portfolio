@@ -269,11 +269,11 @@ footer {
 
 /* Top Left Small */
 .video-2 {
-  width: 8rem;
+  width: 9rem;
   aspect-ratio: 9/16;
   top: 5%;
   left: 5%;
-  transform: translate(265%, 17%);
+  transform: translate(225%, 17%);
 }
 
 /* Bottom Left Medium */
@@ -282,12 +282,12 @@ footer {
   aspect-ratio: 16/9;
   top: 0%;
   left: 0%;
-  transform: translate(-5%, 100%);
+  transform: translate(-5%, 110%);
 }
 /* Text Section */
 .text-section {
   flex: 1;
-  margin-top: 2rem;
+  margin-top: -2rem;
   max-width: 700px;
   text-align: center;
   transform: translate(45%, 50%);
@@ -476,23 +476,24 @@ strong {
     height: auto;
     padding: 0px;
     margin: 0px;
-    padding-top: 10dvh;
+    padding-top: 1dvh;
   }
 
   .hero-text h1 {
-    padding-top: 10dvh;
+    padding-top: 7dvh;
     font-size: 3.5rem;
   }
 
   .hero-text p {
     font-size: 1rem;
-    margin-top: 25dvh;
-    margin-bottom: -30dvh;
-    background-color: #dfa300;
+    padding-top: 0.5dvh;
+    margin-bottom: -28dvh;
+    background-color: #dfa400a2;
   }
 
   .hero-CTA {
-    padding-top: 2 dvh;
+    padding-top: 28dvh;
+    margin: 0px;
   }
   /* Product section */
   .product-card {
@@ -523,13 +524,13 @@ strong {
     width: 15rem;
     aspect-ratio: 16/9;
     margin-bottom: 0px;
-    top: 25dvh;
+    top: 30dvh;
     right: 40dvw;
   }
   .video-2 {
     width: 8rem;
-    top: 13dvh;
-    left: -4rem;
+    top: 18dvh;
+    left: -3.5rem;
   }
 
   .video-3 {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import video from "../videos/UADL.mp4";
-import video2 from "../videos/UADM.mp4";
+import video from "../videos/blog_d.mp4";
+import video2 from "../videos/blog_m.mp4";
 
 
 const VideoComponent = ({ url, className, hoveredVideo, setHoveredVideo }) => {
@@ -36,17 +36,18 @@ const PortfolioShowcase = () => {
         <div className="tags">
           <span className="tag">CREATIVE DEVELOPMENT</span>
           <span className="tag">React JS</span>
-          <span className="tag">Bootstrap CSS</span>
-          <span className="tag">HTML</span>
-          <span className="tag">UAD</span>
+          <span className="tag">Node JS</span>
+          <span className="tag">Cloudnary</span>
+          <span className="tag">MongoDB</span>
         </div>
 
         <p className="description">
-          We revamped Chargeflow’s website to enhance user experience, streamline messaging, 
-          and improve lead generation through clear value propositions and intuitive design.
+         A modern full-stack blog platform built with the MERN stack. Features include user 
+         authentication, post creation/editing, real-time comments, markdown support, and 
+         responsive design — ideal for developers and writers alike.
         </p>
 
-        <a href="https://universityofagriculturedemo1.netlify.app/" 
+        <a href="https://blog-web-with-front-and-back-end-y27x.vercel.app/" 
          target="_blank"
          rel="noopener noreferrer"className="view-project-btn">
           View Project <span className="arrow">→</span>
