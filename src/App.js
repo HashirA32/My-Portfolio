@@ -94,7 +94,7 @@ function App() {
           path="/contact"
           element={
             <>
-              <Hero />
+              <Navbar />
               <Contact />
               <Footer />
             </>
@@ -105,7 +105,7 @@ function App() {
           path="/work"
           element={
             <>
-            <Navbar />
+              <Navbar />
               <HeroParallax products={products} />
               <Footer />
             </>
