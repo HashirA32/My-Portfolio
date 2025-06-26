@@ -20,7 +20,7 @@ export default function HeroSection() {
 
 
 <nav className= {`navBar absolute z-50 top-0 left-0 w-full p-0 shadow-md transition-all
-   ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"}`}>
+   ${isScrolled ? "bg-black shadow-lg" : "bg-transparent"}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="logo">

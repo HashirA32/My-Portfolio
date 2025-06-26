@@ -20,10 +20,10 @@ const PortfolioShowcase = () => {
   const [hoveredVideo, setHoveredVideo] = useState(null);
 
   return (
-    <div className={`portfolio-container ${hoveredVideo ? "video-hover" : ""}`}>
+    <div className={`portfolio-container ${hoveredVideo ? "video-hover" : ""} `}>
       {/* Video Section */}
-      <div className="video-section">
-        <div className="Casestudy-heading">MY RECENT WORK</div>
+      <div className="video-section ">
+        <div className="text-white text-5xl mt-16 font-bold ">MY RECENT WORK</div>
         <div className="video-container">
           <VideoComponent url={video} className="video-1" hoveredVideo={hoveredVideo} setHoveredVideo={setHoveredVideo} />
           <VideoComponent url={video2} className="video-2" hoveredVideo={hoveredVideo} setHoveredVideo={setHoveredVideo} />
