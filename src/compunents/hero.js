@@ -71,17 +71,22 @@ export default function HeroSection() {
         <Link to="/" >
         <h1 className="text-9xl font-bold leading-tight relative">
           {/* Stroked Text (Above Foreground Image) */}
-          <span 
-            className="absolute left-0 right-0 text-transparent stroke-text z-30" 
-            style={{ WebkitTextStroke: "1px grey md:2px", mixBlendMode: "difference" }}>
-            Webdeveloper
-          </span>
+         <span
+  className="absolute left-0 right-0 z-30"
+  style={{
+    WebkitTextStroke: "1px md:2px gray", 
+    color: "transparent",          
+    mixBlendMode: "difference"
+  }}
+>
+  Webdeveloper
+</span>
           {/* Filled Text (Behind Foreground Image) */}
           <span className="text-white-800  relative z-10">Webdeveloper</span> <br />
         </h1>
         
         </Link>
-             <p className="w-[500px] text-lg text-gray-100 rounded-sm bg-[#e9b60e5b]  font-bold text-center p-1 relative z-30 mb-05 mt-2">
+             <p className="w-[auto] text-lg text-gray-100 rounded-sm bg-[#e9b60e5b]  font-bold text-center p-1 relative z-30 mb-05 mt-2">
           My name is <span className="text-[#110c02] border-b-2">Hashir</span> and I help businesses build sleek, responsive websites as a freelance developer.</p>
 
         {/* CTA Buttons */}
