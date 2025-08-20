@@ -86,7 +86,7 @@ export default function HeroSection() {
         </h1>
         
         </Link>
-             <p className="w-[auto] text-lg text-gray-100 rounded-sm bg-[#e9b60e5b]  font-bold text-center p-1 relative z-30 mb-05 mt-2">
+             <p className="w-[auto] md:w-220 text-lg text-gray-100 rounded-sm bg-[#e9b60e5b]  font-bold text-center p-1 relative z-30 mb-05 mt-2">
           My name is <span className="text-[#110c02] border-b-2">Hashir</span> and I help businesses build sleek, responsive websites as a freelance developer.</p>
 
         {/* CTA Buttons */}
