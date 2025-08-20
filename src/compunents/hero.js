@@ -74,7 +74,7 @@ export default function HeroSection() {
          <span
   className="absolute left-0 right-0 z-30"
   style={{
-    WebkitTextStroke: "1px md:2px gray", 
+    WebkitTextStroke: "2px gray", 
     color: "transparent",          
     mixBlendMode: "difference"
   }}
